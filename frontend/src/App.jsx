@@ -3,7 +3,7 @@ import { AuthProvider, useAuth } from "./context/AuthContext.jsx";
 import Login from "./pages/Login.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 
-const API = "http://localhost:5000";
+const API = "https://employee-system-bvtb.onrender.com";
 
 function Main() {
   const { token } = useAuth();
