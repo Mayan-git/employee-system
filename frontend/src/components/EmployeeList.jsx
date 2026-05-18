@@ -19,7 +19,7 @@ export default function EmployeeList({ API, refresh, onRefresh }) {
     const data = await res.json();
     setEmployees(Array.isArray(data) ? data : []);
   };
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { fetch_(); }, [refresh, search, dept]);
 
   const del = async (id) => {
